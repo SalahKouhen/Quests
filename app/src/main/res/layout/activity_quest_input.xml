@@ -4,21 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".QuestInput">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/questRecView"
-        />
+        android:text="Title: "
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="359dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <EditText
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:src="@android:drawable/ic_menu_add"
-        android:id="@+id/addQuestBtn"/>
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Quest title"
+        android:layout_toRightOf="@id/title"/>
+
 
 </RelativeLayout>
