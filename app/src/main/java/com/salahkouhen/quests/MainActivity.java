@@ -27,12 +27,15 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.questRecView);
         FloatingActionButton addQuestBtn = findViewById(R.id.addQuestBtn);
 
-        List<Quest> quests = new ArrayList<Quest>();
+        ArrayList<Quest> quests = new ArrayList<Quest>();
         quests.add(new Quest("Create quests app"));
         quests.add(new Quest("Complete morning routine"));
 
+        QuestList.getInstance().setList(quests);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new QuestAdapter(getApplicationContext(),quests));
+
+        recyclerView.setAdapter(new QuestAdapter(getApplicationContext(),QuestList.getInstance().getList()));
 
         addQuestBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="359dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtTxtQuestTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,5 +24,12 @@
         android:hint="Quest title"
         android:layout_toRightOf="@id/title"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtQuestTitle"
+        android:text="Add"
+        android:id="@+id/addNewQuestBtn"
+        />
 
 </RelativeLayout>
