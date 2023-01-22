@@ -8,6 +8,10 @@ public class Quest {
     private int value; // 0 - platinum 1 - gold 2 - silver 3 - copper
     private boolean recurring; // does quest disappear after press complete
 
+    public Quest(String title) {
+        this.title = title;
+    }
+
     public String getTitle() {
         return title;
     }

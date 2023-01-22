@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questTitle"
+        android:text="Title"
+        android:textSize="40dp"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/questTitle"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/rewardImg"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/gold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rewardTxt"
+        android:layout_below="@+id/questTitle"
+        android:text="Reward:"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/rewardImg"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rewardTxt"
+        android:layout_centerHorizontal="true"
+        android:text="Claim reward"
+        android:id="@+id/completeBtn"
+        />
+
+
+</RelativeLayout>
